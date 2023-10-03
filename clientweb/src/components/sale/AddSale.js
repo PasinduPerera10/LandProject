@@ -57,7 +57,7 @@ const fromun = {margin:'30px auto'};
         const userId = localStorage.getItem("userId");
 
         if (!userId){
-        window.location = "/signin"
+        window.location = "/"
         }else{
             const username = (JSON.parse(userId));
             console.log(username);

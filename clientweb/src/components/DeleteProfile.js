@@ -34,7 +34,7 @@ const DeleteProfile=()=>{
             axios.delete(`http://localhost:4500/user/delete/${userId}`).then((res)=>{
                 alert("Account deleted Succefully");
                 localStorage.clear("username");
-                navigate("/signin");
+                navigate("/");
 
             }).catch((err)=>{
                     alert(err.message)
