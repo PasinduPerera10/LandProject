@@ -36,13 +36,10 @@ router.route("/update/:id").put(async (req, res) => {
     let outletid = req.params.id;
 
     await Web.findByIdAndUpdate(outletid, req.body)
-        .then(() => {
+       {
             res.status(200).send({ status: "Wanted Ad Updated Successfully."});
-        })
-        .catch((err) => {
-            console.log(err);
-            res.status(500).send({ status: "Error with updating data" });
-        });
+        }
+        
 });
 
 router.route("/get/:id").get(async (req, res) => {
