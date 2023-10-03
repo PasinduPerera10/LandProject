@@ -18,7 +18,7 @@ const LoginNav = () => {
             variant="h6"
             noWrap
             component="a"
-            href="/"
+            href="/signin"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },

@@ -73,7 +73,7 @@ const SignIn = () =>{
 
         <form onSubmit={handleSubmit}>
         <TextField label="Enter Your Email Address" type="text" name="email" fullWidth required style={textStyle} value={credentials.email}
-         onChange={handleChange} dangerouslySetInnerHTML={{ __html: credentials.email }}/>
+         onChange={handleChange} />
         <TextField label="Password"  type="password" name="password" fullWidth required style={textStyle} value={credentials.password}
          onChange={handleChange}/>
           {error && <div style={errorMsg}>{error}</div>}

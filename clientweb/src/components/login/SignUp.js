@@ -59,7 +59,7 @@ const SignUp=()=>{
 
         await axios.post("http://localhost:4500/user/add",user).then(() => {
           alert("User Created");
-          navigate('/');
+          navigate('/signin');
         })
         
         

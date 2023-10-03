@@ -1,6 +1,6 @@
 function Logout() {
     localStorage.clear("username");
-    window.location = "/"
+    window.location = "/signin"
 }
 
 export default Logout;

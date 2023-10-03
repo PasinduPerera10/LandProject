@@ -37,7 +37,7 @@ const Dashboard=()=>{
         // const loggedInUserId = localStorage.getItem("userId");
 
         if (!loggedInUser){
-        window.location = "/"
+        window.location = "/signin"
         }else{
             const username = (JSON.parse(loggedInUser));
             setusername(username);
